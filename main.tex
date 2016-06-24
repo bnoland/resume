@@ -1,0 +1,118 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Benjamin E. Noland}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{291 Moore Street}
+ \moveleft.5\hoffset\centerline{Princeton, N.J., 08540}
+ \moveleft.5\hoffset\centerline{609-851-1137}
+ \moveleft.5\hoffset\centerline{benjaminnoland93@gmail.com}
+ %\moveleft.5\hoffset\centerline{benjamin.noland@rutgers.edu}
+
+
+\begin{resume} 
+
+\section{OBJECTIVES}
+% TODO
+
+\section{EDUCATION}
+Rutgers University, New Brunswick, N.J. (May 2016) \\
+{\sl Bachelor of Arts}, Mathematics \\
+{\sl Minor}, Physics \\
+% \sl will be bold italic in New Century Schoolbook (or
+% any postscript font) and just slanted in
+%	Computer Modern (default) font
+School of Arts and Sciences Honors Program \\
+GPA: 3.525
+
+{\sl Selection of coursework:} \\
+\begin{itemize}
+\item \textbf{Mathematics:}
+Calculus, linear algebra, ordinary differential equations, real analysis, complex variables, differential geometry, linear programming, abstract algebra, topology {\it (taken at Rutgers University)}
+
+\item \textbf{Physics:}
+Classical mechanics, electromagnetism, astrophysics {\it (taken at Rutgers University)}
+
+\item \textbf{Computer science:}
+Systems programming, data structures and algorithms {\it (taken at Princeton University while in high school)}
+\end{itemize}
+
+\section{COMPUTER \\ SKILLS}
+{\sl Experience with:} \\
+C, Java, Python, JavaScript (including JQuery), PHP, CSS, HTML, MySQL, x86 assembly language, \LaTeX, Windows, *nix. \\
+{\sl Currently learning:} R
+
+\section{OTHER \\ SKILLS}
+Probability theory
+
+\section{WORK \\ EXPERIENCE}
+
+{\sl Programming intern} \hfill Summer 2015 \\
+Vertices LLC, New Brunswick, N.J.
+\begin{itemize}  \itemsep -2pt
+\item
+Worked on Mappler, an online geographic information system (GIS) tool.
+\item
+Designed and implemented a feature that allows users to upload images, extracts GPS data from the images, and adds them to the map database.
+\item
+Partially implemented a daemon for extracting images and associated GPS data from email accounts and adding them to a map database.
+\end{itemize}
+
+{\sl Programming intern} \hfill Summer 2014 \\
+Voorhees Transportation Center, Bloustein School, Rutgers University, New Brunswick, N.J.
+\begin{itemize}  \itemsep -2pt
+\item
+Designed and implemented a website that maps crashes involving vehicles and pedestrians (including bicyclists) using data provided by the New Jersey Department of Transportation. The site allows the user to submit search queries to filter the data. The site can be found at: \\
+\\
+http://pppolicy.rutgers.edu/vtcdata/pedestrian/pedmap.html
+\end{itemize}
+
+\section{OTHER \\ ACTIVITIES}
+
+{\sl Tutoring (informal)} \hfill Fall 2012 - Spring 2016 \\
+Rutgers University, New Brunswick, N.J.
+\begin{itemize}  \itemsep -2pt
+\item
+Provided informal tutoring in programming and mathematics to students at Rutgers University.
+\end{itemize}
+
+{\sl Head of Computer Club} \hfill Fall 2009 - Spring 2012 \\
+Princeton High School, Princeton, N.J.
+\begin{itemize}  \itemsep -2pt
+\item
+Acted as president of the computer club at Princeton High School, during which I led efforts to develop a robot that could navigate a maze, organized fundraising for the club, and taught other students the basics of programming.
+\end{itemize}
+
+{\sl Video game development program} \hfill Summer 2011 \\
+Rensselaer Polytechnic Institute, Troy, N.Y.
+\begin{itemize}  \itemsep -2pt
+\item
+Learned the basics of video game development, and developed a small game in a team environment.
+\end{itemize}
+
+{\sl Taught robotics to elementary school students} \hfill Spring 2011 \\
+Riverside Elementary School
+\begin{itemize}  \itemsep -2pt
+\item
+Taught the elements of robotics to elementary school students using Lego.
+\end{itemize}
+
+\section{HONORS}
+\begin{itemize} \itemsep -2pt
+\item
+Rutgers 2014 Academic Excellence Award
+\item
+Princeton High School Computer Science Award
+\end{itemize} 
+
+\end{resume}
+\end{document}
