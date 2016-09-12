@@ -1,25 +1,32 @@
 \documentclass[12pt]{article}
 \usepackage[top=1.25in, bottom=1.25in, left=1in, right=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
 \setlength\parindent{0cm}
+\setitemize{itemsep=-2pt}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
 
 \begin{document}
 
-\moveleft.5\hoffset\centerline{\large\bf Benjamin E. Noland}
+\moveleft.5\hoffset\centerline{\Large\bf Benjamin E. Noland}
 \smallskip
 \moveleft.5\hoffset\centerline{291 Moore Street}
 \moveleft.5\hoffset\centerline{Princeton, NJ, 08540}
 \moveleft.5\hoffset\centerline{609-851-1137}
 \moveleft.5\hoffset\centerline{benjaminnoland93@gmail.com}
 %\moveleft.5\hoffset\centerline{benjamin.noland@rutgers.edu}
+\moveleft.5\hoffset\centerline{http://bnoland.github.io/}
 
-\subsection*{Education}
+\section*{Education}
 
-\textit{\textbf{Rutgers, The State University of New Jersey}}, New Brunswick, NJ, 2012-2016 \\
+\textbf{Rutgers University}, New Brunswick, NJ, September 2012-May 2016 \\
 BA in mathematics, minor in physics \\
 School of Arts and Sciences Honors Program \\
 GPA: 3.525
 
-\subsubsection*{Relevant coursework:}
+\subsection*{Relevant coursework:}
 \begin{itemize}
 \item
 \textbf{Mathematics:} Calculus, linear algebra, ordinary differential equations, real analysis, complex variables, differential geometry, linear programming, abstract algebra, topology \textit{(taken at Rutgers University)}
@@ -33,19 +40,20 @@ Classical mechanics, electromagnetism, astrophysics \textit{(taken at Rutgers Un
 Systems programming, data structures and algorithms \textit{(taken at Princeton University while in high school)}
 \end{itemize}
 
-\subsection*{Computer Skills}
+\section*{Computer Skills}
 \begin{itemize}
 \item
 \textbf{Proficient with:} C, Java, Python, R, \LaTeX, Windows, Unix, Git, Microsoft Office (and similar tools)
-
 \item
 \textbf{Experience with:} Stata, JavaScript (including JQuery), HTML, CSS, PHP, MySQL, x86 assembly language
+\item
+\textbf{GitHub account:} github.com/bnoland
 \end{itemize}
 
-\subsection*{Experience}
+\section*{Experience}
 
-\textit{\textbf{Vertices, LLC}}, New Brunswick, NJ, May 2015-August 2015 \\
-Programming intern
+\textit{\textbf{Programming intern}} \\
+\textbf{Vertices, LLC}, New Brunswick, NJ, May 2015-August 2015
 \begin{itemize}
 \item
 Worked on Mappler, an online geographic information system (GIS) tool. Designed and implemented a feature that allows users to upload images, extracts GPS data from the images, and adds them to the map database.
@@ -53,8 +61,8 @@ Worked on Mappler, an online geographic information system (GIS) tool. Designed 
 Partially implemented a daemon for extracting images and associated GPS data from email accounts and adding them to a map database.
 \end{itemize}
 
-\textit{\textbf{Voorhees Transportation Center}}, New Brunswick, NJ, July 2014-August 2014 \\
-Programming intern
+\textit{\textbf{Programming intern}} \\
+\textbf{Voorhees Transportation Center}, New Brunswick, NJ, July 2014-August 2014
 \begin{itemize}
 \item
 Designed and implemented a website that maps crashes involving vehicles and pedestrians (including bicyclists) using data provided by the New Jersey Department of Transportation.
@@ -64,12 +72,48 @@ The site allows the user to submit search queries to filter the data. The site c
 \centering{http://pppolicy.rutgers.edu/vtcdata/pedestrian/pedmap.html}
 \end{itemize}
 
-\subsection*{Additional Experience}
+\section*{Additional Experience}
 
+\textit{\textbf{Tutoring (informal)}} \\
+\textbf{Rutgers University}, New Brunswick, NJ, September 2012-May 2016
 \begin{itemize}
 \item
+Provided informal tutoring in programming and mathematics to students at Rutgers University.
 \end{itemize}
 
-\subsection*{Honors}
+\textit{\textbf{Head of Computer Club}} \\
+\textbf{Princeton High School}, Princeton, NJ, September 2009-February 2012
+\begin{itemize}
+\item
+Worked with club members towards developing a robot that could navigate a maze.
+\item
+Organized fundraising for the club.
+\item
+Taught other students the basics of programming.
+\end{itemize}
+
+\textit{\textbf{Video game development program}} \\
+\textbf{Rensselaer Polytechnic Institute}, Troy, NY, July 2011
+\begin{itemize}
+\item
+Learned the basics of video game development.
+\item
+Developed a small game in a team environment using Python and Pygame.
+\end{itemize}
+
+\textit{\textbf{Taught robotics to elementary school students}} \\
+\textbf{Riverside Elementary School}, Princeton, NJ, January 2011-March 2011
+\begin{itemize}
+\item
+Used Lego to teach the elements of robotics to elementary school students.
+\end{itemize}
+
+\section*{Honors}
+\begin{itemize}
+\item
+\textbf{2014 Rutgers Academic Excellence Award}, April 2014
+\item
+\textbf{Princeton High School Computer Science Award}, June 2012
+\end{itemize}
 
 \end{document}
