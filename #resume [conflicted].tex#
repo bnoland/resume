@@ -100,21 +100,7 @@
 \section*{Experience}
 
 \textit{\textbf{Part-time research assistant}} \\
-\textbf{Rutgers Infrastructure Monitoring and Evaluation Group,
-  Department of Civil and Environmental Engineering, Rutgers
-  University},
-New Brunswick, NJ \\
-June 2019--Present
-\begin{itemize}
-\item Processed and managed data on bids made by contractors for
-  construction jobs nationwide, using data from the Bid Express
-  bidding service.
-\item Assisted in research investigating bid price distributions and
-  forecasting future bid prices.
-\item Assisted in writing a report for the New Jersey Department of
-  Transportation on bid price distributions for construction bids
-  statewide.
-\end{itemize}
+\textbf{
 
 \textit{\textbf{Part-time research assistant}} \\
 \textbf{School of Management and Labor Relations, Rutgers University},
@@ -129,13 +115,9 @@ May 2018--May 2019
   coverage rates.
 \item The application was built using R and Shiny. It is currently
   available at:
-  \begin{center}
-    %\url{https://bnoland.shinyapps.io/nurses_web_tool/}
-    \url{https://smlr.rutgers.edu/content/nurse-unionization-data-tool}
-  \end{center}
-  The latest version of the code can be found at:
-  \begin{center}
-    \url{https://github.com/bnoland/nurses_web_tool}
+  \begin{center} \url{https://bnoland.shinyapps.io/nurses_web_tool/}
+  \end{center} The latest version of the code can be found at:
+  \begin{center} \url{https://github.com/bnoland/nurses_web_tool}
   \end{center}
 \item Wrote extensive documentation for the tool.
 \end{itemize}
