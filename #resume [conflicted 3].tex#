@@ -89,13 +89,10 @@ July 2018--August 2018
 \begin{itemize}
 \item Used R and the Elsevier Scopus API to scrape roughly two-decades
   worth of abstracts from articles published in transportation-related
-  journals. The goal was to determine whether writing quality in these
-  journals has degraded or improved with time.
+  journals. The goal was to determine whether 
 \item The scraped data was cleaned using R and fed into the Coh-Metrix
-  system, developed at the University of Memphis to analyze linguistic
-  cohesion among a collection of text corpora.
-\item No conclusive results from this brief study, but open to further
-  investigation.
+  system, developed at the University of Memphis for investigating to
+  analyze linguistic cohesion among a collection of text corpora.
 \item \textbf{Skills used:} R, data processing
 \end{itemize}
 

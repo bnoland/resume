@@ -82,24 +82,6 @@ June 2019--November 2019
 \end{itemize}
 
 \textit{\textbf{Part-time research assistant}} \\
-\textbf{Alan M. Voorhees Transportation Center, Bloustein School of
-  Planning and Public Policy, Rutgers University},
-New Brunswick, NJ \\
-July 2018--August 2018
-\begin{itemize}
-\item Used R and the Elsevier Scopus API to scrape roughly two-decades
-  worth of abstracts from articles published in transportation-related
-  journals. The goal was to determine whether writing quality in these
-  journals has degraded or improved with time.
-\item The scraped data was cleaned using R and fed into the Coh-Metrix
-  system, developed at the University of Memphis to analyze linguistic
-  cohesion among a collection of text corpora.
-\item No conclusive results from this brief study, but open to further
-  investigation.
-\item \textbf{Skills used:} R, data processing
-\end{itemize}
-
-\textit{\textbf{Part-time research assistant}} \\
 \textbf{School of Management and Labor Relations, Rutgers University},
 New Brunswick, NJ \\
 May 2018--May 2019
@@ -114,9 +96,7 @@ May 2018--May 2019
   with visualizations done using ggplot.
 \item Wrote extensive documentation for the tool, formatted using
   \LaTeX.
-\item The tool is currently in use by the School of Management and
-  Labor Relations at Rutgers, and other interested parties, to analyze
-  unionization trends among registered nurses in the United States.
+\item The tool is currently in use by the 
 \item The application is currently available at:
   \begin{center}
     %\url{https://bnoland.shinyapps.io/nurses_web_tool/}
@@ -145,24 +125,20 @@ May 2017--July 2017
 New Brunswick, NJ \\
 June 2016--November 2016
 \begin{itemize}
-\item Formulated heuristic methods for detecting possible groups of
-  riders in Citi Bike trip data.
-\item Designed and implemented R scripts to process the raw data and
-  implement these methods. The latest versions of the scripts can be
-  found at:
+\item Designed and implemented R scripts to detect possible groups of
+  riders in Citi Bike trip data. The latest versions of the scripts
+  can be found at:
   \begin{center}
     \url{https://github.com/bnoland/citibike}
   \end{center}
 
-\item Implemented a website for visualizing the results of this study,
-  using Google Fusion Tables to store the processed data and the
-  Google Maps API to visualize it. The source can be found at:
+\item Implemented a website for visualizing the results of this
+  study. The source can be found at:
   \begin{center}
     \url{https://github.com/bnoland/citibike-map}
   \end{center}
 
-\item \textbf{Skills used:} R, data processing, HTML, CSS, JavaScript,
-  SQL
+\item \textbf{Skills used:} R, data processing, HTML, CSS, JavaScript
 \end{itemize}
 
 \textit{\textbf{Programming intern}} \\
@@ -172,12 +148,10 @@ May 2015--August 2015
 \item Worked on Mappler, an online geographic information system (GIS)
   tool. Designed and implemented a feature that allows users to upload
   images, extracts GPS data from the images, and adds them to the map
-  database. Used PHP for the backend code, and JavaScript for the
-  frontend.
-\item Implemented a daemon in Python for extracting images and
-  associated GPS data from email accounts and adding them to a map
   database.
-\item \textbf{Skills used:} HTML, CSS, JavaScript, PHP, Python, SQL
+\item Implemented a daemon for extracting images and associated GPS
+  data from email accounts and adding them to a map database.
+\item \textbf{Skills used:} HTML, CSS, JavaScript, PHP, Python
 \end{itemize}
 
 \textit{\textbf{Programming intern}} \\
@@ -189,10 +163,9 @@ July 2014--August 2014
 \item Designed and implemented a website that maps crashes involving
   vehicles and pedestrians (including bicyclists) using data provided
   by the New Jersey Department of Transportation.
-\item The site allowed the user to submit search queries to filter the
-  data. Google Fusion Tables was used to store the data, and
-  visualization was done using the Google Maps API.
-\item \textbf{Skills used:} HTML, CSS, JavaScript, SQL
+\item The site allows the user to submit search queries to filter the
+  data.
+\item \textbf{Skills used:} HTML, CSS, JavaScript
 \end{itemize}
 
 \section*{Extracurricular Activities}
