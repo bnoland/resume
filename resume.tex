@@ -9,16 +9,19 @@
 
 \setlength\parindent{0cm}
 \setitemize{itemsep=-2pt}
-\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+	[{\titlerule[0.8pt]}]
 
 \begin{document}
 
 \moveleft.5\hoffset\centerline{\Large\bf Benjamin E. Noland}
 \smallskip
-\moveleft.5\hoffset\centerline{609-851-1137}
+%\moveleft.5\hoffset\centerline{609-851-1137}
 \moveleft.5\hoffset\centerline{benjaminnoland93@gmail.com}
 %\moveleft.5\hoffset\centerline{benjamin.noland@rutgers.edu}
-\moveleft.5\hoffset\centerline{\url{http://bnoland.github.io/}}
+%\moveleft.5\hoffset\centerline{\url{http://bnoland.github.io/}}
+\moveleft.5\hoffset\centerline{\url{https://github.com/bnoland}}
+\moveleft.5\hoffset\centerline{\url{https://www.linkedin.com/in/benjamin-noland-735217118/}}
 
 \section*{Education}
 
@@ -29,58 +32,57 @@
 
 \item \textbf{BA in mathematics, Rutgers University}, New Brunswick, NJ
   (with honors) \\
-  September 2012--May 2016 \\
-  Minor in physics \\
-  School of Arts and Sciences Honors Program
+  September 2012--May 2016
+%  Minor in physics \\
+%  School of Arts and Sciences Honors Program
 \end{itemize}
 
-\iffalse
-\subsection*{Selection of coursework:}
-
+\section*{Skills}
 \begin{itemize}
-\item \textbf{Mathematics:} Calculus, linear algebra, ordinary
-  differential equations, real analysis, complex variables,
-  differential geometry, linear programming, abstract algebra,
-  topology \textit{(taken at Rutgers University)}
-
-\item \textbf{Physics:} Classical mechanics, electromagnetism,
-  astrophysics \textit{(taken at Rutgers University)}
-
-\item \textbf{Computer science:} Systems programming, data structures
-  and algorithms \textit{(taken at Princeton University while in high
-    school)}; Advanced Placement computer science \textit{(taken in
-    high school)}
-
-\item \textbf{Statistics:} Advanced Placement statistics
-  \textit{(taken in high school)}, probability theory, regression
-  analysis \textit{(taking at Rutgers University)}
-
+	\item \textbf{Proficient:} Applied statistics and machine learning, R, 
+	Python, C, Java, \LaTeX, Linux, Git, Google Cloud Platform
+	\item \textbf{Experience:} Amazon Web Services, MATLAB, Stata, JavaScript, 
+	HTML, CSS, PHP, MySQL, x86 assembly language, Rust
 \end{itemize}
-\fi
 
 \section*{Experience}
+
+\textit{\textbf{Research Engineer}} \\
+\textbf{Mem Protocol, Inc.} \\
+San Francisco, CA \\
+May 2021--March 2022
+\begin{itemize}
+	\item Was the first non-founding employee at the company.
+	\item Managed a BigQuery database containing information about transactions 
+	on the Ethereum network. Wrote SQL queries to extract data for a social web 
+	application. Applied database optimizations to cut query times in half.
+	\item Designed and prototyped the architecture for a system for managing 
+	decentralized identity online.
+	\item Made technical presentations to investors.
+	\item Mentored junior software engineers. Provided general troubleshooting 
+	and advice.
+	\item \textbf{Skills used:} SQL, software engineering
+\end{itemize}
 
 \textit{\textbf{Research Associate}} \\
 \textbf{C2SMART, Department of Civil and Urban Engineering,
   New York University}, \\
 New York, NY \\
-August 2020--Present
+August 2020--July 2021
 \begin{itemize}
-\item Currently working on the Capital Program Resource Model (CPRM)
-  project at C2SMART:
-  \begin{center}
-    \url{https://c2smart.engineering.nyu.edu/Capital-Program-Resource-Model}
-  \end{center}
-\item Working towards development of a means for assessing the
+\item Worked on the Capital Program Resource Model (CPRM)
+  project at C2SMART.
+\item Worked towards development of a means for assessing the
   effectiveness of teams working on projects under the auspices of the
   New York State Department of Transportation (NYSDOT) by examining
   project outcomes.
-\item One of the major goals of the project is to help NYSDOT improve
+\item One of the major goals of the project was to help NYSDOT improve
   project outcomes through effective allocation of resources (staff,
   consultants, etc.) to projects throughout the state.
-\item \textbf{Skills used:} R, data processing, statistics, network analysis
+\item \textbf{Skills used:} R, data processing, statistics
 \end{itemize}
 
+\iffalse
 \textit{\textbf{Freelance statistician}} \\
 Princeton, NJ \\
 June 2020--Present
@@ -96,6 +98,7 @@ February 2020--March 2020
 \item Tutored students from Princeton High School and Princeton
   University in mathematics.
 \end{itemize}
+\fi
 
 \textit{\textbf{Part-time research assistant}} \\
 \textbf{Rutgers Infrastructure Monitoring and Evaluation Group,
@@ -160,13 +163,10 @@ May 2018--May 2019
     %\url{https://bnoland.shinyapps.io/nurses_web_tool/}
     \url{https://smlr.rutgers.edu/content/nurse-unionization-data-tool}
   \end{center}
-  The latest version of the code can be found at:
-  \begin{center}
-    \url{https://github.com/bnoland/nurses_web_tool}
-  \end{center}
 \item \textbf{Skills used:} R, Shiny, data processing
 \end{itemize}
 
+\iffalse
 \textit{\textbf{Independent mathematics tutor}} \\
 \textbf{Mercer County Community College},
 West Windsor, NJ \\
@@ -176,6 +176,7 @@ May 2017--July 2017
 \item Tutored students from Mercer County Community College in
   mathematics (mainly calculus and precalculus).
 \end{itemize}
+\fi
 
 \textit{\textbf{Programming intern}} \\
 \textbf{Alan M. Voorhees Transportation Center, Bloustein School of
@@ -186,18 +187,11 @@ June 2016--November 2016
 \item Formulated heuristic methods for detecting possible groups of
   riders in Citi Bike trip data.
 \item Designed and implemented R scripts to process the raw data and
-  implement these methods. The latest versions of the scripts can be
-  found at:
-  \begin{center}
-    \url{https://github.com/bnoland/citibike}
-  \end{center}
+  implement these methods.
 
 \item Implemented a website for visualizing the results of this study,
   using Google Fusion Tables to store the processed data and the
-  Google Maps API to visualize it. The source can be found at:
-  \begin{center}
-    \url{https://github.com/bnoland/citibike-map}
-  \end{center}
+  Google Maps API to visualize it.
 
 \item \textbf{Skills used:} R, data processing, HTML, CSS, JavaScript,
   SQL
@@ -233,6 +227,7 @@ July 2014--August 2014
 \item \textbf{Skills used:} HTML, CSS, JavaScript, SQL
 \end{itemize}
 
+\iffalse
 \section*{Extracurricular Activities}
 
 \textit{\textbf{Head of Computer Club}} \\
@@ -245,8 +240,9 @@ September 2009--February 2012
 \item Organized fundraising for the club.
 \item Taught other students the basics of programming.
 \end{itemize}
+\fi
 
-% TODO: Keep additional experience section?  \iffalse
+% TODO: Keep additional experience section?
 \iffalse
 \section*{Additional Experience}
 
@@ -286,6 +282,7 @@ September 2009--February 2012
 
 \fi
 
+\iffalse
 \section*{Skills}
 
 \subsection*{Statistics and data analysis skills:}
@@ -334,5 +331,6 @@ September 2009--February 2012
 \item \textbf{2014 Rutgers Academic Excellence Award}, April 2014
 \item \textbf{Princeton High School Computer Science Award}, June 2012
 \end{itemize}
+\fi
 
 \end{document}
