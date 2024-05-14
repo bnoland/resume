@@ -1,161 +1,116 @@
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[top=0.9in, bottom=0.9in, left=0.5in, right=0.5in]{geometry}
+\usepackage[top=0.2in, bottom=0.2in, left=0.2in, right=0.2in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
 
 \setlength\parindent{0cm}
-\setitemize{itemsep=-2pt}
+\setitemize{itemsep=-3pt}
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 	[{\titlerule[0.8pt]}]
 
+\pagenumbering{gobble}
+
 \begin{document}
 
-\moveleft.5\hoffset\centerline{\Large\bf Benjamin E. Noland}
-\smallskip
-\moveleft.5\hoffset\centerline{benjaminnoland93@gmail.com}
-\moveleft.5\hoffset\centerline{\url{https://github.com/bnoland}}
-\moveleft.5\hoffset\centerline{\url{https://www.linkedin.com/in/benjamin-noland-735217118/}}
-
-\iffalse
-  \section*{Skills}
-  \begin{itemize}
-    \item \textbf{Proficient:} Applied statistics and machine learning, R,
-          Python, C, Java, \LaTeX, Linux, Git, Google Cloud Platform
-    \item \textbf{Experience:} Amazon Web Services, MATLAB, Stata, C++, CMake,
-          JavaScript, HTML, CSS, PHP, MySQL, x86 assembly language, Rust
+\begin{multicols}{2}
+  \moveleft.5\hoffset\centerline{\Large\bf Benjamin E. Noland}
+  \smallskip
+  \moveleft.5\hoffset\centerline{\href{mailto:benjaminnoland93@gmail.com}{benjaminnoland93@gmail.com}}
+  \columnbreak
+  \begin{itemize}[label={}]
+    \item \href{https://www.github.com/bnoland}{github.com/bnoland}
+    \item \href{https://www.linkedin.com/in/benjamin-noland-735217118/}{linkedin.com/in/benjamin-noland-735217118/}
   \end{itemize}
-\fi
+\end{multicols}
+
+\section*{Objective}
+
+Dedicated and experienced professional with a strong background in mathematics, statistics, and software development,
+seeking opportunities to leverage analytical skills and programming expertise to contribute effectively in roles
+involving data analysis and software engineering.
+
+\section*{Skills}
+
+\begin{itemize}
+  \item \textbf{Focus areas:} Machine learning, computer graphics, program optimization
+  \item \textbf{Programming languages:} C, C++, Python, R, JavaScript, x86 assembly language
+  \item \textbf{Databases:} MongoDB, MySQL, PostgreSQL, BigQuery
+  \item \textbf{Cloud services:} GCP, AWS
+  \item \textbf{Other:} OpenGL + shader programming
+\end{itemize}
 
 \section*{Experience}
 
-\textit{\textbf{Adjunct Professor of Mathematics}} \\
-\textbf{Mercer County Community College}, West Windsor, NJ \\
-August 2023-Present
-\bigskip
-% \begin{itemize}
-%   \item Teaching statistics.
-% \end{itemize}
+\textsc{Adjunct Professor of Mathematics}, \textbf{Mercer County Community College}, West Windsor, NJ, August 2023-Present
+\begin{itemize}
+  \item Teach multiple sections of the introductory statistics class at the college.
+  \item Lecture, grade papers, and tutor students.
+\end{itemize}
 
-\textit{\textbf{Software Developer}} \\
-\textbf{Savvy Marketers, LLC}, Princeton, NJ \\
-March 2023--July 2023
+\textsc{Software Developer}, \textbf{Savvy Marketers, LLC}, Princeton, NJ, March 2023--July 2023
 \begin{itemize}
   \item Contributed to the code base for a custom learning management solution
         (LMS) being developed by the company. Used React for the front-end and
         Node and MongoDB for the back-end.
   \item Designed and programmed marketing research surveys for large corporate
         clients using Decipher survey development software.
-  \item Wrote reports summarizing the research findings.
-  \item \textbf{Skills used:} JavaScript, Docker, React, MongoDB
 \end{itemize}
 
-\textit{\textbf{Research Engineer}} \\
-\textbf{Mem Protocol, Inc.}, San Francisco, CA \\
-May 2021--March 2022
+\textsc{Research Engineer}, \textbf{Mem Protocol, Inc.}, San Francisco, CA, May 2021--April 2022
 \begin{itemize}
-  \item Was the first non-founding employee at the company.
+  \item Designed and prototyped the architecture for a system for managing
+        decentralized identity online.
   \item Managed a BigQuery database containing information about transactions on
         the Ethereum network. Wrote SQL queries to extract data for a social web
         application. Applied database optimizations to cut query times in half.
-  \item Designed and prototyped the architecture for a system for managing
-        decentralized identity online.
-  \item \textbf{Skills used:} SQL, software engineering
 \end{itemize}
 
-\textit{\textbf{Research Associate}} \\
-\textbf{C2SMART, New York University}, New York, NY \\
-August 2020--July 2021
+\textsc{Research Associate}, \textbf{C2SMART, New York University}, New York, NY, August 2020--July 2021
 \begin{itemize}
-  \item Worked towards development of a means for assessing the effectiveness of
-        teams working on projects under the auspices of the New York State
-        Department of Transportation (NYSDOT) by examining project outcomes.
-  \item One of the major goals of the project was to help NYSDOT improve project
-        outcomes through effective allocation of resources (staff, consultants,
-        etc.) to projects throughout the state.
-  \item \textbf{Skills used:} R, data processing, statistics
+  \item Devised a method to evaluate team effectiveness in New York State Department of Transportation (NYSDOT) projects
+        by analyzing project outcomes, aimed at enhancing NYSDOT's resource allocation for improved statewide project results.
 \end{itemize}
 
-\iffalse
-  \textit{\textbf{Freelance statistician}} \\
-  Princeton, NJ \\
-  June 2020--Present
-  \begin{itemize}
-    \item I currently offer data analysis and programming services through
-          freelancer sites such as Guru and Upwork.
-  \end{itemize}
-
-  \textit{\textbf{Independent mathematics tutor}} \\
-  Princeton, NJ \\
-  February 2020--March 2020
-  \begin{itemize}
-    \item Tutored students from Princeton High School and Princeton University
-          in mathematics.
-  \end{itemize}
-\fi
-
-\textit{\textbf{Research Assistant}} \\
-\textbf{RIME, Rutgers University}, New Brunswick, NJ \\
-June 2019--November 2019
+\textsc{Research Assistant}, \textbf{Rutgers Infrastructure Monitoring and Evaluation Group, Rutgers University}, New Brunswick, NJ, June 2019--November 2019
 \begin{itemize}
-  \item Used R to process and manage data on bids made by contractors for
-        construction jobs nationwide, using data from the Bid Express bidding
-        service.
-  \item Assisted in research investigating bid price distributions and
-        forecasting future bid prices. Included extensive exploratory analysis,
-        including producing visualizations using ggplot, along with analysis of
-        the time series of bid prices using standard R modeling tools.
-  \item \textbf{Skills used:} R, data processing, statistics
+  \item Utilized R for data processing and management of nationwide construction job bids from Bid Express, and
+        contributed to research on bid price distributions and forecasting through comprehensive exploratory analysis and time
+        series modeling.
 \end{itemize}
 
-\iffalse
-  \textit{\textbf{Research Assistant}} \\
-  \textbf{Alan M. Voorhees Transportation Center, Bloustein School of Planning
-    and Public Policy, Rutgers University}, New Brunswick, NJ \\
-  June 2018--July 2018
-  \begin{itemize}
-    \item Used R and the Elsevier Scopus API to scrape roughly two-decades worth
-          of abstracts from articles published in transportation-related
-          journals. The goal was to determine whether writing quality in these
-          journals has degraded or improved with time.
-    \item The scraped data was cleaned using R and fed into the Coh-Metrix
-          system, developed at the University of Memphis to analyze linguistic
-          cohesion among a collection of text corpora.
-    \item No conclusive results from this brief study, but open to further
-          investigation.
-    \item \textbf{Skills used:} R, data processing
-  \end{itemize}
-\fi
-
-\textit{\textbf{Research Assistant}} \\
-\textbf{SMLR, Rutgers University}, New Brunswick, NJ \\
-May 2018--May 2019
+\textsc{Research Assistant}, \textbf{Alan M. Voorhees Transportation Center, Rutgers University}, New Brunswick, NJ, June 2018--July 2018
 \begin{itemize}
-  \item Designed and implemented a web application using R and Shiny to explore
-        the unionization trends of registered nurses in the United States using
-        Current Population Survey (CPS) data.
-  \item The application allows the user to select, aggregate, and visualize the
-        data to explore union membership and union contract coverage rates. The
-        application was built using the Shiny framework, with visualizations
-        done using ggplot.
-  \item The application is currently available at:
-        \begin{center}
-          \url{https://smlr.rutgers.edu/content/nurse-unionization-data-tool}
-        \end{center}
-  \item \textbf{Skills used:} R, Shiny, data processing
+  \item Used R and the Elsevier Scopus API to collect two decades of abstracts from transportation journals, analyzed
+        writing quality evolution over time, and assessed linguistic cohesion using the Coh-Metrix system after cleaning the
+        data with R.
+\end{itemize}
+
+\textsc{Research Assistant}, \textbf{School of Management and Labor Relations, Rutgers University}, New Brunswick, NJ, May 2018--May 2019
+\begin{itemize}
+  \item Developed a Shiny web app with R to analyze US registered nurses' unionization trends using CPS data, offering
+        users interactive exploration of union membership and contract coverage rates through ggplot visualizations.
+  \item The application is currently available at: \url{https://smlr.rutgers.edu/content/nurse-unionization-data-tool}
 \end{itemize}
 
 \section*{Education}
 
 \begin{itemize}
-  \item \textbf{MS in statistics, Rutgers University}, New Brunswick, NJ (with
-        honors) \\
+  \item \textbf{MS in statistics, Rutgers University}, New Brunswick, NJ (with honors) \\
         September 2017--May 2019
-
-  \item \textbf{BA in mathematics, Rutgers University}, New Brunswick, NJ (with
-        honors) \\
+  \item \textbf{BA in mathematics, Rutgers University}, New Brunswick, NJ (with honors) \\
         September 2012--May 2016
 \end{itemize}
+
+% Put hidden text here.
+
+\scalebox{0.1}{\color{white}{}}
+
+\scalebox{0.1}{\color{white}{}}
 
 \end{document}
