@@ -28,7 +28,7 @@
 %	DOCUMENT DEFINITION
 %
 %============================================================================%
-\documentclass[10pt,A4]{article}	
+\documentclass[12pt,A4]{article}	
 
 
 %----------------------------------------------------------------------------------------
@@ -166,18 +166,19 @@
 % param 3:	institution (where did you work / study)
 % param 4:	list of paragraphs
 %
-\newcommand{\cvevent}[4]
+\newcommand{\cvevent}[5]
 {
 
 \begin{tabular*}{1\textwidth}{p{13.6cm}  x{3.9cm}}
 	\textbf{#2} \\
-	\textcolor{bgcol}{#3} &   \vspace{2.5pt}\textcolor{sectcol}{#1}
+	\textcolor{bgcol}{#3} \\
+	\textcolor{bgcol}{#4} &   \vspace{2.5pt}\textcolor{sectcol}{#1}
 \end{tabular*}
 
 \textcolor{softcol}{\hrule}
 \vspace{6pt}
-\foreach \desc in {#4}{
-	*  \desc\\[3pt]
+\foreach \desc in {#5}{
+	* \desc\\[3pt]
 }
 	
 \vspace{3pt}

@@ -15,8 +15,8 @@ cvmeta:
   - title: Field
     left: Software Engineering, Statistics
     right: bnoland.github.io
-  - title: Techs
-    left: Python, R, C, C++, Linux
+  - title: Technologies
+    left: Python, R, C, C++, Linux, scikit-learn, PyTorch
     right: ben13@stat.rutgers.edu
 execute:
   echo: false
@@ -24,18 +24,19 @@ execute:
 
 ```{r}
 #| label: cvevents
-cvevents <- function(tbl, when, what, where, details) {
-    command_start <- "\\cvevent"
+cvevents <- function(tbl, period, title, company, city, details) {
+  command_start <- "\\cvevent"
 
-    res <- paste0(
-        command_start, "{", tbl[[when]], "}", 
-        "{", tbl[[what]], "}",
-        "{", tbl[[where]], "}")
-    
-    tbl[[details]] <- sapply(tbl[[details]], function(x) paste0("{", x, "}", collapse = ","))
-    res <- paste0(res, "{",tbl[[details]],"}")
+  res <- paste0(
+    command_start, "{", tbl[[period]], "}", 
+    "{", tbl[[title]], "}",
+    "{", tbl[[company]], "}",
+    "{", tbl[[city]], "}")
+  
+  tbl[[details]] <- sapply(tbl[[details]], function(x) paste0("{", x, "}", collapse = ","))
+  res <- paste0(res, "{",tbl[[details]],"}")
 
-    cat(res, sep = "\n")
+  cat(res, sep = "\n")
 }
 ```
 
@@ -49,9 +50,10 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 #| label: experience
 #| output: asis
 tibble::tribble(
-    ~role, ~institution, ~dates, ~tasks,
+    ~role, ~institution, ~city, ~dates, ~tasks,
     "Adjunct Lecturer in Statistics",
-    "Rutgers University, New Brunswick, NJ",
+    "Rutgers University",
+    "New Brunswick, NJ",
     "Aug 2024 - Present",
     c(
       "Teach statistics courses at the undergraduate level (80+ students per section).",
@@ -60,7 +62,8 @@ tibble::tribble(
     ),
 
     "Adjunct Lecturer in Mathematics",
-    "Mercer County Community College, West Windor, NJ",
+    "Mercer County Community College",
+    "West Windor, NJ",
     "Aug 2023 - Present",
     c(
       "Teach courses in the introductory statistics sequence (20-30 students per section).",
@@ -68,15 +71,17 @@ tibble::tribble(
     ),
 
     "Data Scientist",
-    "Savvy Marketers LLC, Princeton, NJ",
+    "Savvy Marketers LLC",
+    "Princeton, NJ",
     "Mar 2023 - Jul 2023",
-    c("
-      Designed, programmed, and analyzed marketing surveys for large corporate clients.",
+    c(
+      "Designed, programmed, and analyzed marketing surveys for large corporate clients.",
       "Contributed to the code base for a custom learning management solution (LMS) being developed by the company. Used React for the front-end and Node and MongoDB for the back-end."
     ),
 
     "Research Engineer",
-    "Mem Protocol, San Francisco, CA",
+    "Mem Protocol",
+    "San Francisco, CA",
     "May 2021 - Apr 2022",
     c(
       "Was the first non-founding employee at the company.",
@@ -87,7 +92,8 @@ tibble::tribble(
     ),
 
     "Research Associate",
-    "C2SMART Center, New York University, New York, NY",
+    "C2SMART Center, New York University",
+    "New York, NY",
     "May 2021 - Apr 2022",
     c(
       "Worked on the Capital Program Resource Model (CPRM) project at C2SMART.",
@@ -96,7 +102,8 @@ tibble::tribble(
     ),
 
     "Research Assistant",
-    "Rutgers Infrastructure Monitoring and Evaluation Group, Rutgers University, Piscataway, NJ",
+    "Rutgers Infrastructure Monitoring and Evaluation Group, Rutgers University",
+    "Piscataway, NJ",
     "Jun 2019 - Nov 2019",
     c(
       "Used R to process and manage data on bids made by contractors for construction jobs nationwide, using data from the Bid Express bidding service.",
@@ -105,7 +112,8 @@ tibble::tribble(
     ),
 
     "Research Assistant",
-    "Edward J. Bloustein School of Planning and Public Policy, Rutgers University, New Brunswick, NJ",
+    "Edward J. Bloustein School of Planning and Public Policy, Rutgers University",
+    "New Brunswick, NJ",
     "Jun 2018 - Jul 2018",
     c(
       "Used R and the Elsevier Scopus API to scrape roughly two-decades worth of abstracts from articles published in transportation-related journals. The goal was to determine whether writing quality in these journals has degraded or improved with time.",
@@ -113,7 +121,8 @@ tibble::tribble(
     ),
 
     "Research Assistant",
-    "School of Management and Labor Relations, Rutgers University, New Brunswick, NJ",
+    "School of Management and Labor Relations, Rutgers University",
+    "New Brunswick, NJ",
     "May 2018 - May 2019",
     c(
       "Designed and implemented a web application using R and Shiny to explore the unionization trends of registered nurses in the United States using Current Population Survey (CPS) data.",
@@ -125,7 +134,8 @@ tibble::tribble(
     ),
 
     "Programming Intern",
-    "Edward J. Bloustein School of Planning and Public Policy, Rutgers University, New Brunswick, NJ",
+    "Edward J. Bloustein School of Planning and Public Policy, Rutgers University",
+    "New Brunswick, NJ",
     "Jun 2016 - Nov 2016",
     c(
       "Formulated heuristic methods for detecting possible groups of riders in Citi Bike trip data.",
@@ -134,7 +144,8 @@ tibble::tribble(
     ),
 
     "Programming Intern",
-    "Vertices LLC, New Brunswick, NJ",
+    "Vertices LLC",
+    "New Brunswick, NJ",
     "May 2015 - Aug 2015",
     c(
       "Worked on Mappler, an online geographic information system (GIS) tool. Designed and implemented a feature that allows users to upload images, extracts GPS data from the images, and adds them to the map database. Used PHP for the backend code, and JavaScript for the frontend.",
@@ -142,14 +153,15 @@ tibble::tribble(
     ),
 
     "Programming Intern",
-    "Edward J. Bloustein School of Planning and Public Policy, Rutgers University, New Brunswick, NJ",
+    "Edward J. Bloustein School of Planning and Public Policy, Rutgers University",
+    "New Brunswick, NJ",
     "Jul 2014 - Aug 2014",
     c(
       "Designed and implemented a website that maps crashes involving vehicles and pedestrians (including bicyclists) using data provided by the New Jersey Department of Transportation.",
       "The site allowed the user to submit search queries to filter the data. Google Fusion Tables was used to store the data, and visualization was done using the Google Maps API."
     ),
 ) |>
-    cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
+    cvevents(period = "dates", title = "role", company = "institution", city = "city", details = "tasks")
 ```
 
 # Education
@@ -158,9 +170,18 @@ tibble::tribble(
 #| label: education
 #| output: asis
 tibble::tribble(
-    ~degree, ~uni, ~loc, ~dates, ~details,
-    "Ph.D. in Computer Science", "University of Konstanz", "Konstanz, Germany", "Nov. 2012 - Sep. 2015", c("Thesis: A Positional Approach for Network Centrality", "Developed and implemented new methods to assess network centrality"),
-    "Diploma in Business Mathematics", "KIT", "Karlsruhe, Germany", "Sep. 2006 - Jul. 2012", c("Thesis: Modularity Maximization", "Implementation and comparison of different clustering algorithms using Matlab")
+    ~degree, ~institution, ~city, ~dates, ~details,
+    "Master of Science in Statistics",
+    "Rutgers University-New Brunswick",
+    "New Brunswick, NJ",
+    "Sep 2017 - May 2019",
+    c("Graduated with honors."),
+
+    "Bachelor of Arts in Mathematics (Minor in Physics)",
+    "Rutgers University-New Brunswick",
+    "New Brunswick, NJ",
+    "Sep 2012 - May 2016",
+    c("Graduated with honors.")
 ) |>
-    cvevents(when = "dates", what = "degree", where = "loc", details = "details")
+  cvevents(period = "dates", title = "degree", company = "institution", city = "city", details = "details")
 ```
