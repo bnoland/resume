@@ -1,23 +1,23 @@
 ---
-author: David Schoch
-title: R Developer
+author: Benjamin Noland
+title: Statistician + Software Engineer
 format:
   classic-cv-pdf: default
 cvfooter:
-  left: "mr.schochastics.net"
-  right: "github.com/schochastics"
+  left: "bnoland.github.io"
+  right: "github.com/bnoland"
 cvcolor: 58748F #without `#`
 cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
   - title: Status
-    left: Team Lead for Transparent Social Analytics, GESIS
-    right: Cologne, Germany
+    left: Adjunct Lecturer in Statistics
+    right: Princeton, NJ
   - title: Field
-    left: Software Engineering, Data Science
-    right: mr.schochastics.net
+    left: Software Engineering, Statistics
+    right: bnoland.github.io
   - title: Techs
-    left: R, bash, Python, javascript, Lua
-    right: david@schochastics.net
+    left: Python, R, C, C++, Linux
+    right: ben13@stat.rutgers.edu
 execute:
   echo: false
 ---
@@ -25,7 +25,6 @@ execute:
 ```{r}
 #| label: cvevents
 cvevents <- function(tbl, when, what, where, details) {
-
     command_start <- "\\cvevent"
 
     res <- paste0(
@@ -46,19 +45,109 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 # Experience
 
-
 ```{r}
 #| label: experience
 #| output: asis
 tibble::tribble(
-    ~role, ~institution, ~dates, ~details, ~tasks,
-    "Team Lead", "GESIS - Leibniz Institute for the Social Sciences", "Mar. 2022 - Present",
-    "Transparent Social Analytics, Department of Computational Social Science", c("Coordination of a project to build an Open Science platform with reusable code and tutorials", "Research on Open Science Practices", "Implementation of tools to enhance reproducibility and facilitate research with digital data in R"),
-    "Presidential Fellow", "University of Manchester", "Sep. 2018 - Feb. 2022",
-    "Sociology Department", c("Research on Disinformation on Social Media", "Analyses of large scale and unstructured data sets with R, Python and Bash"),
-    "Post Doctoral Researcher", "ETH Zurich", "Nov. 2017 - Aug. 2018", "Chair of Social Networks", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
-    "Post Doctoral Researcher", "University of Konstanz", "Oct. 2015 - Oct. 2017", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Webscraping and harmonizing a large corpus of football data"),
-    "Ph.D. Candidate", "University of Konstanz", "Nov. 2012 - Sep. 2015", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries")
+    ~role, ~institution, ~dates, ~tasks,
+    "Adjunct Lecturer in Statistics",
+    "Rutgers University, New Brunswick, NJ",
+    "Aug 2024 - Present",
+    c(
+      "Teach statistics courses at the undergraduate level (80+ students per section).",
+      "Developed course materials from scratch.",
+      "Coordinate with TAs and graders in the statistics department."
+    ),
+
+    "Adjunct Lecturer in Mathematics",
+    "Mercer County Community College, West Windor, NJ",
+    "Aug 2023 - Present",
+    c(
+      "Teach courses in the introductory statistics sequence (20-30 students per section).",
+      "Work with students with diverse backgrounds and abilities."
+    ),
+
+    "Data Scientist",
+    "Savvy Marketers LLC, Princeton, NJ",
+    "Mar 2023 - Jul 2023",
+    c("
+      Designed, programmed, and analyzed marketing surveys for large corporate clients.",
+      "Contributed to the code base for a custom learning management solution (LMS) being developed by the company. Used React for the front-end and Node and MongoDB for the back-end."
+    ),
+
+    "Research Engineer",
+    "Mem Protocol, San Francisco, CA",
+    "May 2021 - Apr 2022",
+    c(
+      "Was the first non-founding employee at the company.",
+      "Managed a BigQuery database containing information about transactions on the Ethereum network. Wrote SQL queries to extract data for a social web application. Applied database optimizations to cut query times in half.",
+      "Designed and prototyped the architecture for a system for managing decentralized identity online.",
+      "Made technical presentations to investors.",
+      "Mentored junior software engineers. Provided general troubleshooting and advice."
+    ),
+
+    "Research Associate",
+    "C2SMART Center, New York University, New York, NY",
+    "May 2021 - Apr 2022",
+    c(
+      "Worked on the Capital Program Resource Model (CPRM) project at C2SMART.",
+      "Worked towards development of a means for assessing the effectiveness of teams working on projects under the auspices of the New York State Department of Transportation (NYSDOT) by examining project outcomes.",
+      "One of the major goals of the project was to help NYSDOT improve project outcomes through effective allocation of resources (staff, consultants, etc.) to projects throughout the state."
+    ),
+
+    "Research Assistant",
+    "Rutgers Infrastructure Monitoring and Evaluation Group, Rutgers University, Piscataway, NJ",
+    "Jun 2019 - Nov 2019",
+    c(
+      "Used R to process and manage data on bids made by contractors for construction jobs nationwide, using data from the Bid Express bidding service.",
+      "Assisted in research investigating bid price distributions and forecasting future bid prices. Included extensive exploratory analysis, including producing visualizations using ggplot, along with analysis of the time series of bid prices using standard R modeling tools.",
+      "Assisted in writing a report for the New Jersey Department of Transportation on bid price distributions for construction bids statewide. The report was written in RMarkdown, and the process automated using the drake R library."
+    ),
+
+    "Research Assistant",
+    "Edward J. Bloustein School of Planning and Public Policy, Rutgers University, New Brunswick, NJ",
+    "Jun 2018 - Jul 2018",
+    c(
+      "Used R and the Elsevier Scopus API to scrape roughly two-decades worth of abstracts from articles published in transportation-related journals. The goal was to determine whether writing quality in these journals has degraded or improved with time.",
+      "The scraped data was cleaned using R and fed into the Coh-Metrix system, developed at the University of Memphis to analyze linguistic cohesion among a collection of text corpora."
+    ),
+
+    "Research Assistant",
+    "School of Management and Labor Relations, Rutgers University, New Brunswick, NJ",
+    "May 2018 - May 2019",
+    c(
+      "Designed and implemented a web application using R and Shiny to explore the unionization trends of registered nurses in the United States using Current Population Survey (CPS) data.",
+      "Included extensive preprocessing of the raw data using R.",
+      "The application allows the user to select, aggregate, and visualize the data to explore union membership and union contract coverage rates. The application was built using the Shiny framework, with visualizations done using ggplot.",
+      "Wrote extensive documentation for the tool, formatted using LaTeX.",
+      "The tool is currently in use by the School of Management and Labor Relations at Rutgers and other interested parties to analyze unionization trends among registered nurses in the United States.",
+      "The application is currently available at: https://smlr.rutgers.edu/content/nurse-unionization-data-tool"
+    ),
+
+    "Programming Intern",
+    "Edward J. Bloustein School of Planning and Public Policy, Rutgers University, New Brunswick, NJ",
+    "Jun 2016 - Nov 2016",
+    c(
+      "Formulated heuristic methods for detecting possible groups of riders in Citi Bike trip data.",
+      "Designed and implemented R scripts to process the raw data and implement these methods.",
+      "Implemented a website for visualizing the results of this study, using Google Fusion Tables to store the processed data and the Google Maps API to visualize it."
+    ),
+
+    "Programming Intern",
+    "Vertices LLC, New Brunswick, NJ",
+    "May 2015 - Aug 2015",
+    c(
+      "Worked on Mappler, an online geographic information system (GIS) tool. Designed and implemented a feature that allows users to upload images, extracts GPS data from the images, and adds them to the map database. Used PHP for the backend code, and JavaScript for the frontend.",
+      "Implemented a daemon in Python for extracting images and associated GPS data from email accounts and adding them to a map database."
+    ),
+
+    "Programming Intern",
+    "Edward J. Bloustein School of Planning and Public Policy, Rutgers University, New Brunswick, NJ",
+    "Jul 2014 - Aug 2014",
+    c(
+      "Designed and implemented a website that maps crashes involving vehicles and pedestrians (including bicyclists) using data provided by the New Jersey Department of Transportation.",
+      "The site allowed the user to submit search queries to filter the data. Google Fusion Tables was used to store the data, and visualization was done using the Google Maps API."
+    ),
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
 ```
