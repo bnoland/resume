@@ -3,9 +3,6 @@ author: Benjamin Noland
 title: Statistician + Software Engineer
 format:
   classic-cv-pdf: default
-cvfooter:
-  left: "bnoland.github.io"
-  right: "github.com/bnoland"
 cvcolor: 58748F #without `#`
 cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
@@ -14,10 +11,10 @@ cvmeta:
     right: Princeton, NJ
   - title: Field
     left: Software Engineering, Statistics
-    right: bnoland.github.io
+    right: "\\href{https://github.com/bnoland}{github.com/bnoland}"
   - title: Technologies
-    left: Python, R, C, C++, Linux, scikit-learn, PyTorch
-    right: ben13@stat.rutgers.edu
+    left: Python, R, C, C++, PyTorch, scikit-learn, Linux, Git
+    right: "\\href{mailto:ben13@stat.rutgers.edu}{ben13@stat.rutgers.edu}"
 execute:
   echo: false
 ---
@@ -42,7 +39,7 @@ cvevents <- function(tbl, period, title, company, city, details) {
 
 # Summary
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Experienced software engineer with a background in statistics. Currently seeking to branch into an impactful research position utilizing my skills.
 
 # Experience
 
@@ -94,7 +91,7 @@ tibble::tribble(
     "Research Associate",
     "C2SMART Center, New York University",
     "New York, NY",
-    "May 2021 - Apr 2022",
+    "Aug 2020 - Jul 2021",
     c(
       "Worked on the Capital Program Resource Model (CPRM) project at C2SMART.",
       "Worked towards development of a means for assessing the effectiveness of teams working on projects under the auspices of the New York State Department of Transportation (NYSDOT) by examining project outcomes.",
@@ -128,9 +125,7 @@ tibble::tribble(
       "Designed and implemented a web application using R and Shiny to explore the unionization trends of registered nurses in the United States using Current Population Survey (CPS) data.",
       "Included extensive preprocessing of the raw data using R.",
       "The application allows the user to select, aggregate, and visualize the data to explore union membership and union contract coverage rates. The application was built using the Shiny framework, with visualizations done using ggplot.",
-      "Wrote extensive documentation for the tool, formatted using LaTeX.",
-      "The tool is currently in use by the School of Management and Labor Relations at Rutgers and other interested parties to analyze unionization trends among registered nurses in the United States.",
-      "The application is currently available at: https://smlr.rutgers.edu/content/nurse-unionization-data-tool"
+      "Wrote extensive documentation for the tool, formatted using \\LaTeX."
     ),
 
     "Programming Intern",
